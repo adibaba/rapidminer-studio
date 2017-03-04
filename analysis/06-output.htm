@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>RapidMiner (Open source, GNU AGPL v3)</title></head><body>
+<h1>RapidMiner</h1>
+<h3>(Open source, GNU AGPL v3)</h3>
+Some of the <a target="_blank" href="https://twitter.com/adrianwilke/status/650973732119429120"> files I worked on</a> at RapidMiner in 2014.
+
+<h3>Graphical User Interface: Settings</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/properties/SettingsTabs.java#L62">rapidminer/gui/properties/SettingsTabs.java</a>
+<pre>The tabs for the different groups of RapidMiner settings.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/properties/SettingsItems.java#L49">rapidminer/gui/properties/SettingsItems.java</a>
+<pre>This singleton instance handles SettingItems.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/properties/SettingsDialog.java#L60">rapidminer/gui/properties/SettingsDialog.java</a>
+<pre>The settings dialog for user settings.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/properties/SettingsXmlHandler.java#L47">rapidminer/gui/properties/SettingsXmlHandler.java</a>
+<pre>XML SAX parser handler for the hierarchy of settings items.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/properties/SettingsItem.java#L40">rapidminer/gui/properties/SettingsItem.java</a>
+<pre>XML SAX parser handler for the hierarchy of settings items.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/properties/SettingsPropertyPanel.java#L55">rapidminer/gui/properties/SettingsPropertyPanel.java</a>
+<pre>The SettingsPropertyPanel is used to display settings of the same group.</pre>
+
+
+
+<h3>Graphical User Interface: Dialogs</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/tools/dialogs/SelectionDialog.java#L49">rapidminer/gui/tools/dialogs/SelectionDialog.java</a>
+<pre>The SelectionDialog provides two types selection options: Radio buttons and check boxes. It canbe used to provide a combination of user choices: Firstly, a user can choose between a set ofoptions (radio buttons). Secondly, a user can choose between multiple binary options(checkboxes). In addition, the request of the dialog can be confirmed or canceled by usingdifferent modes.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/tools/dialogs/ConfirmDialog.java#L47">rapidminer/gui/tools/dialogs/ConfirmDialog.java</a>
+<pre>Creates a confirm dialog where the user can chose his action.</pre>
+
+
+
+<h3>Graphical User Interface: Drag and Drop</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/dnd/TransferableOperator.java#L39">rapidminer/gui/dnd/TransferableOperator.java</a>
+<pre>Provides a transferable wrapper for Operators in order to drag-n-drop them in the Process-Tree.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/gui/dnd/RepositoryLocationList.java#L32">rapidminer/gui/dnd/RepositoryLocationList.java</a>
+<pre>Container class for handling of multiple RepositoryLocations</pre>
+
+
+
+<h3>Internationalization and Localization</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/tools/I18N.java#L35">rapidminer/tools/I18N.java</a>
+<pre>I18N</pre>
+
+
+
+<h3>Configuration</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/tools/config/ConfiguratorParameterHandler.java#L55">rapidminer/tools/config/ConfiguratorParameterHandler.java</a>
+<pre>The default ParameterHandler implementation for Configurators.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/tools/config/AbstractConfigurator.java#L41">rapidminer/tools/config/AbstractConfigurator.java</a>
+<pre>Can be used to configure Configurables. The ConfigurationManager will take careof saving the configuration to configuration files or to a database and to provide access todialogs which can be used to edit these configurables.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/tools/config/Configurator.java#L45">rapidminer/tools/config/Configurator.java</a>
+<pre>Can be used to configure Configurables. The ConfigurationManager will take careof saving the configuration to configuration files or to a database and to provide access todialogs which can be used to edit these configurables.</pre>
+
+
+
+<h3>Plugins</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/tools/plugin/Plugin.java#L110">rapidminer/tools/plugin/Plugin.java</a>
+<pre>The class for RapidMiner plugins. This class is used to encapsulate the .jar file which must bein the lib/plugins subdirectory of RapidMiner. Provides methods for plugin checks,operator registering, and getting information about the plugin.</pre>
+
+
+
+<h3>RapidMiner</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/RapidMiner.java#L94">rapidminer/RapidMiner.java</a>
+<pre>Main program. Entry point for command line programm, GUI and wrappers.</pre>
+
+
+
+<h3>Repositories</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/RepositoryLocation.java#L40">rapidminer/repository/RepositoryLocation.java</a>
+<pre>A location in a repository.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/RepositoryManager.java#L57">rapidminer/repository/RepositoryManager.java</a>
+<pre>Keeps static references to registered repositories and provides helper methods.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/gui/actions/DeleteRepositoryEntryAction.java#L40">rapidminer/repository/gui/actions/DeleteRepositoryEntryAction.java</a>
+<pre>This action deletes the selected entry.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/gui/actions/CutEntryRepositoryAction.java#L34">rapidminer/repository/gui/actions/CutEntryRepositoryAction.java</a>
+<pre>This action is the standard cut action.act superclass of actions that are executed on subclasses of Entry.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/gui/actions/AbstractRepositoryAction.java#L41">rapidminer/repository/gui/actions/AbstractRepositoryAction.java</a>
+<pre>Abstract superclass of actions that are executed on subclasses of Entry.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/gui/RepositoryTreeUtil.java#L39">rapidminer/repository/gui/RepositoryTreeUtil.java</a>
+<pre>A utility class to save and restore expansion states and selection paths of the repository tree.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/gui/RepositoryTree.java#L117">rapidminer/repository/gui/RepositoryTree.java</a>
+<pre>A tree displaying repository contents.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/gui/RepositoryTree.java#L122">rapidminer/repository/gui/RepositoryTree.java</a>
+<pre>A tree displaying repository contents.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/repository/gui/RescalingProgressListener.java#L31">rapidminer/repository/gui/RescalingProgressListener.java</a>
+<pre>Progress listener to handle the progress of sub-tasks. These will use only an absolute section(min ... max) of the respective parent progress listener. The progress values of the parentprogress are used to control the progress state.</pre>
+
+
+
+<h3>Excel (XLSX) Parser</h3>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/operator/nio/model/xlsx/XlsxWorkbookParser.java#L37">rapidminer/operator/nio/model/xlsx/XlsxWorkbookParser.java</a>
+<pre>SAX parser for XLSX Workbook.</pre>
+
+<a target="_blank" href="https://github.com/adibaba/rapidminer-studio/blob/6.5.2/src/main/java/com/rapidminer/operator/nio/model/xlsx/XlsxWorkbookRelationParser.java#L46">rapidminer/operator/nio/model/xlsx/XlsxWorkbookRelationParser.java</a>
+<pre>SAX parser for XLSX Workbook relations.</pre>
+
+<h3>Contact</h3>Adrian Wilke<br /><a href="http://adrianwilke.de/">http://adrianwilke.de/</a></body></html>

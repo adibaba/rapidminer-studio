@@ -1,0 +1,26 @@
+Graphical User Interface: Settings
+
+
+
+
+
+Graphical User Interface: Dialogs
+
+Graphical User Interface: Drag and Drop
+
+Internationalization and Localization
+Configuration
+
+
+Plugins
+RapidMiner
+Repositories
+
+
+
+
+
+
+
+
+Excel (XLSX) Parser

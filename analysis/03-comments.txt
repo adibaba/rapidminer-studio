@@ -1,0 +1,27 @@
+The tabs for the different groups of RapidMiner settings.
+This singleton instance handles SettingItems.
+The settings dialog for user settings.
+XML SAX parser handler for the hierarchy of settings items.
+XML SAX parser handler for the hierarchy of settings items.
+The SettingsPropertyPanel is used to display settings of the same group.
+The SelectionDialog provides two types selection options: Radio buttons and check boxes. It canbe used to provide a combination of user choices: Firstly, a user can choose between a set ofoptions (radio buttons). Secondly, a user can choose between multiple binary options(checkboxes). In addition, the request of the dialog can be confirmed or canceled by usingdifferent modes.
+Creates a confirm dialog where the user can chose his action.
+Provides a transferable wrapper for Operators in order to drag-n-drop them in the Process-Tree.
+Container class for handling of multiple RepositoryLocations
+I18N
+The default ParameterHandler implementation for Configurators.
+Can be used to configure Configurables. The ConfigurationManager will take careof saving the configuration to configuration files or to a database and to provide access todialogs which can be used to edit these configurables.
+Can be used to configure Configurables. The ConfigurationManager will take careof saving the configuration to configuration files or to a database and to provide access todialogs which can be used to edit these configurables.
+The class for RapidMiner plugins. This class is used to encapsulate the .jar file which must bein the lib/plugins subdirectory of RapidMiner. Provides methods for plugin checks,operator registering, and getting information about the plugin.
+Main program. Entry point for command line programm, GUI and wrappers.
+A location in a repository. 
+Keeps static references to registered repositories and provides helper methods.
+This action deletes the selected entry.
+This action is the standard cut action.act superclass of actions that are executed on subclasses of Entry.
+Abstract superclass of actions that are executed on subclasses of Entry.
+A utility class to save and restore expansion states and selection paths of the repository tree.
+A tree displaying repository contents.
+A tree displaying repository contents.
+Progress listener to handle the progress of sub-tasks. These will use only an absolute section(min ... max) of the respective parent progress listener. The progress values of the parentprogress are used to control the progress state.
+SAX parser for XLSX Workbook.
+SAX parser for XLSX Workbook relations.
